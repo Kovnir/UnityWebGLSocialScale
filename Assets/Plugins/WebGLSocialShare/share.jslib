@@ -1,30 +1,44 @@
 mergeInto(LibraryManager.library, {
-
-    ShareFB: function (str) {
-      var text = UTF8ToString(str)
-      url = 'https://www.facebook.com/sharer/sharer.php?' +
-      'u=https://learnukraine.github.io' +
-      '&picture=https://learnukraine.github.io/logo.png' +
-  //    '&title=TITLE!' +
-      '&quote=' + text;
-  //    '&description=""';
-      options = 'toolbar=0,status=0,resizable=1,width=626,height=436'; 
-      window.open(url,'sharer',options);  
+    ShareFB: function (text, link, hashtags, image) 
+    {
+        var shareURL = 'https://www.facebook.com/sharer/sharer.php?';
+        if (link != undefined)
+        {
+            shareURL += '&u=' + UTF8ToString(link);
+        }
+        if (hashtags != undefined)
+        {
+            shareURL += '&hashtag=' + UTF8ToString(hashtags);
+        }
+        if (image != undefined)
+        {
+            shareURL += '&picture=' + UTF8ToString(image);
+        }
+        if (text != undefined)
+        {
+            shareURL += '&quote=' + UTF8ToString(text);
+        }
+        options = 'width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0'; 
+        window.open(shareURL, 'sharer', options);  
     },
     
-      ShareTwitter: function (str) {
-        var text = UTF8ToString(str)
-        // Opens a pop-up with twitter sharing dialog
-        var shareURL = "http://twitter.com/share?"; //url base
-        //params
-        var params = {
-          url: "https://learnukraine.github.io/ \n\n", 
-          text: text,
-  //        via: "sometwitterusername",
-          hashtags: "LearnUkraine"
+    ShareTwitter: function (text, link, hashtags) 
+    {
+        var shareURL = 'http://twitter.com/share?';
+        if (link != undefined)
+        {
+            shareURL += '&url=' + UTF8ToString(link);
         }
-        for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
-        window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+        if (text != undefined)
+        {
+            shareURL += '&text=' + UTF8ToString(text);
+        }
+        if (hashtags != undefined)
+        {
+            shareURL += '&hashtags=' + UTF8ToString(hashtags);
+        }
+        options = 'width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0'; 
+        window.open(shareURL, 'sharer', options);  
     },
   });
   

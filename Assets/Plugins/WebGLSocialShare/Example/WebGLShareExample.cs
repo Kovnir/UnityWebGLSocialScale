@@ -6,29 +6,28 @@ namespace Kovnir.WebGLSocialShare
     public class WebGLShareExample : MonoBehaviour
     {
         [SerializeField]
-        private InputField inputField;
+        private InputField textInputField;
+        [SerializeField]
+        private InputField imageInputField;
+        [SerializeField]
+        private InputField linkInputField;
+        [SerializeField]
+        private InputField hashtagInputField;
         [SerializeField]
         private Button shareFbButton;
         [SerializeField]
         private Button shareTwitterButton;
 
-        // Start is called before the first frame update
         void Start()
         {
             shareFbButton.onClick.AddListener(() =>
             {
-                WebGLSocialShare.Facebook(inputField.text);
+                WebGLSocialShare.Facebook(textInputField.text, linkInputField.text, hashtagInputField.text, imageInputField.text);
             });
             shareTwitterButton.onClick.AddListener(() =>
             {
-                WebGLSocialShare.Twitter(inputField.text);
+                WebGLSocialShare.Twitter(textInputField.text, linkInputField.text, hashtagInputField.text);
             });
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 }
