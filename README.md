@@ -2,12 +2,14 @@
 
 <b>UnityWebGLSocialShare</b> is a small JS+C# library that allows you to share posts on `Facebook` and `Twitter` from WebGL build of your Unity application.
 
-<a href="https://kovnir.github.io/webglshare" target="_blank">Example</a>
+<a href="https://kovnir.github.io/webglshare" target="_blank">Web Example</a>
 
 ⚠️ The plugin works only in the WebGL. In the Unity Editor, you will only see the log with the text of the post in the Console.
 
-<img width=80% src="Doc/ShareExample.gif">
-
+<div align="center">
+<img width=50% src="Doc/ShareExample.gif">
+</div>
+  
 ## Installation
 
 To install the plugin to your project, choose any of options below.
@@ -40,4 +42,6 @@ WebGLSocialShare.Twitter("This is post text", "http://your-site.com", "hashtag")
 ## Example
 To see the example of plugin usage, open the `SampleScene` scene and check `WebGLShareExample` script.
 
+<div align="center">
 <img width=80% src="Doc/Example.png">
+</div>
