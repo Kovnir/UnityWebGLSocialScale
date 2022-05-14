@@ -423,7 +423,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: GoldenGate USA
+  m_Text: GoldenGate
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -859,7 +859,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textInputField: {fileID: 883593106}
-  imageInputField: {fileID: 0}
   linkInputField: {fileID: 1798473692}
   hashtagInputField: {fileID: 78976114}
   shareFbButton: {fileID: 274056268}
@@ -1482,7 +1481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GoldenGate USA
+  m_Text: GoldenGate
 --- !u!222 &966134693
 CanvasRenderer:
   m_ObjectHideFlags: 0

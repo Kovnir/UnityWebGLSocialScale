@@ -22,40 +22,11 @@ namespace Kovnir.WebGLSocialShare
             });
         }
         
-        public static void Twitter(string text, string link, List<string> hashtags = null)
+        public static void Twitter(string text, string link, string hashtag = null)
         {
-            string hashtagsParam = "";
-            if (hashtags != null)
-            {
-                for (var i = 0; i < hashtags.Count; i++)
-                {
-                    string hashtag = hashtags[i];
-                    if (i == 0)
-                    {
-                        //first one should be without #
-                        if (hashtag[0] == '#')
-                        {
-                            hashtag.Remove('#');
-                        }
-                    }
-                    else
-                    {
-                        if (hashtag[0] != '#')
-                        {
-                            hashtag = "#" + hashtag;
-                        }
-                    }
-                    hashtags[i] = hashtag;
-                }
-                foreach (string hashtag in hashtags)
-                {
-                    hashtagsParam += hashtag + " ";
-                }
-            }
-
             Share("Twitter", text, () =>
             {
-                ShareTwitter(text, link, hashtagsParam);
+                ShareTwitter(text, link, hashtag);
             });
         }
         
