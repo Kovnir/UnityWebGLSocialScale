@@ -27,7 +27,6 @@ namespace Kovnir.WebGLSocialShare
             shareTwitterButton.onClick.AddListener(() =>
             {
                 string hashtag = hashtagInputField.text;
-                hashtag.Remove(' ');
                 WebGLSocialShare.Twitter(textInputField.text, linkInputField.text, hashtag);
             });
         }
