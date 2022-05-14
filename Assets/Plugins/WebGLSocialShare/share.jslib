@@ -14,7 +14,7 @@ mergeInto(LibraryManager.library, {
         window.open(shareURL, 'sharer', options);  
     },
     
-    ShareTwitter: function (text, link, hashtags) 
+    ShareTwitter: function (text, link, hashtag) 
     {
         var shareURL = 'http://twitter.com/share?';
         if (link != undefined)
@@ -25,9 +25,9 @@ mergeInto(LibraryManager.library, {
         {
             shareURL += '&text=' + UTF8ToString(text);
         }
-        if (hashtags != undefined)
+        if (hashtag != undefined)
         {
-            shareURL += '&hashtags=' + UTF8ToString(hashtags);
+            shareURL += '&hashtags=' + UTF8ToString(hashtag);
         }
         options = 'width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0'; 
         window.open(shareURL, 'sharer', options);  
