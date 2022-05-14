@@ -7,10 +7,16 @@
 ⚠️ The plugin works only in the WebGL. In the Unity Editor, you will only see the log with the text of the post in the Console.
 
 
-## AssetStore
+## Installation
+
+To install the plugin to your project, choose any of options below.
+### AssetStore
 Coming soon...
 
-## UPM
+### UPM
+Coming soon...
+
+### From Github
 Coming soon...
 
 ## API
