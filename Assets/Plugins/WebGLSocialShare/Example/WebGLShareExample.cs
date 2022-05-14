@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +9,6 @@ namespace Kovnir.WebGLSocialShare
     {
         [SerializeField]
         private InputField textInputField;
-        [SerializeField]
-        private InputField imageInputField;
         [SerializeField]
         private InputField linkInputField;
         [SerializeField]
@@ -22,11 +22,13 @@ namespace Kovnir.WebGLSocialShare
         {
             shareFbButton.onClick.AddListener(() =>
             {
-                WebGLSocialShare.Facebook(textInputField.text, linkInputField.text, hashtagInputField.text, imageInputField.text);
+                WebGLSocialShare.Facebook(textInputField.text, linkInputField.text);
             });
             shareTwitterButton.onClick.AddListener(() =>
             {
-                WebGLSocialShare.Twitter(textInputField.text, linkInputField.text, hashtagInputField.text);
+                string hashtags = hashtagInputField.text;
+                List<string> hashtagsList = hashtags.Split(' ').ToList();
+                WebGLSocialShare.Twitter(textInputField.text, linkInputField.text, hashtagsList);
             });
         }
     }

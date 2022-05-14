@@ -1,18 +1,10 @@
 mergeInto(LibraryManager.library, {
-    ShareFB: function (text, link, hashtags, image) 
+    ShareFB: function (text, link) 
     {
         var shareURL = 'https://www.facebook.com/sharer/sharer.php?';
         if (link != undefined)
         {
             shareURL += '&u=' + UTF8ToString(link);
-        }
-        if (hashtags != undefined)
-        {
-            shareURL += '&hashtag=' + UTF8ToString(hashtags);
-        }
-        if (image != undefined)
-        {
-            shareURL += '&picture=' + UTF8ToString(image);
         }
         if (text != undefined)
         {
