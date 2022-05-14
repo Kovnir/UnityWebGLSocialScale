@@ -32,4 +32,5 @@ WebGLSocialShare.Twitter("This is post text", "http://your-site.com", "hashtag")
 
 ## Example
 To see the example of plugin usage, open the `SampleScene` scene and check `WebGLShareExample` script.
-<img src="Doc/Example.png">
+
+<img width=80% src="Doc/Example.png">
