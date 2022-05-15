@@ -7,7 +7,7 @@
 ⚠️ The plugin works only in the WebGL. In the Unity Editor, you will only see the log with the text of the post in the Console.
 
 <div align="center">
-<img width=80% src="Doc/ShareExample.gif">
+<img width=50% src="Doc/ShareExample.gif">
 </div>
   
 ## Installation
@@ -22,7 +22,7 @@ Open `Package Manager`, press `+` button, select `Add package from git URL` and 
 https://github.com/Kovnir/UnityWebGLSocialShare.git#package_1.0.0
 ```
 <div align="center">
-<img width=50% src="Doc/Install.gif">
+<img width=80% src="Doc/Install.gif">
 </div>
 
 
