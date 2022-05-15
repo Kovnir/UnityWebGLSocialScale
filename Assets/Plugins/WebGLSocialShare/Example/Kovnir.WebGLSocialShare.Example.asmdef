@@ -1,0 +1,16 @@
+{
+    "name": "kovnir.webglsocialshare.example",
+    "rootNamespace": "",
+    "references": [
+        "GUID:74178efeff0f74b87903c2edb554fc3f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
