@@ -1,0 +1,25 @@
+{
+  "name": "com.kovnir.webglsocialshare",
+  "version": "1.0.0",
+  "displayName": "WebGL Social Share",
+  "description": "WebGLSocialShare is a small JS+C# library that allows you to share posts on Facebook and Twitter from WebGL build of your application.",
+  "unity": "2020.3",
+  "unityRelease": "14f1",
+  "documentationUrl": "https://github.com/Kovnir/UnityWebGLSocialShare",
+  "changelogUrl": "https://github.com/Kovnir/UnityWebGLSocialShare/releases",
+  "licensesUrl": "",
+  "dependencies": {
+ },
+ "keywords": [
+    "Social",
+    "Sharing",
+    "Facebook",
+    "Twitter",
+    "WebGL"
+  ],
+  "author": {
+    "name": "Kovnir",
+    "email": "kovnir.alik@gmail.com",
+    "url": "https://kovnir.github.io/"
+  }
+}
