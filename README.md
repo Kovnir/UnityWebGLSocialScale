@@ -7,7 +7,7 @@
 ⚠️ The plugin works only in the WebGL. In the Unity Editor, you will only see the log with the text of the post in the Console.
 
 <div align="center">
-<img width=50% src="Doc/ShareExample.gif">
+<img width=80% src="Doc/ShareExample.gif">
 </div>
   
 ## Installation
