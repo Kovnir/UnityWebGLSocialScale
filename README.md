@@ -17,7 +17,16 @@ To install the plugin to your project, choose any of options below.
 Coming soon...
 
 ### UPM
-Coming soon...
+Open `Package Manager`, press `+` button, select `Add package from git URL` and enter the next link:
+```
+https://github.com/Kovnir/UnityWebGLSocialShare.git#package_1.0.0
+```
+<div align="center">
+<img width=50% src="Doc/Install.gif">
+</div>
+
+
+The version is defined in the end of the link. To see the link for different version, open <a href="https://github.com/Kovnir/UnityWebGLSocialShare/releases" target="_blank">Release List</a>, choose needed version and copy link from there.
 
 ### From Github
 Open <a href="https://github.com/Kovnir/UnityWebGLSocialShare/releases" target="_blank">Release List</a>, find latest version, download `UnityWebGLSocialShare.unitypackage` from it. Drag to Unity and import all files.
