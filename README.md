@@ -13,8 +13,6 @@
 ## Installation
 
 To install the plugin to your project, choose any of options below.
-### AssetStore
-Coming soon...
 
 ### UPM
 Open `Package Manager`, press `+` button, select `Add package from git URL` and enter the next link:
